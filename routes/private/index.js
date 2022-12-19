@@ -1,8 +1,10 @@
 const express = require('express')
-
-const router = express.Router()
+const userRoutes = require('./userRoutes');
+const router = express.Router();
 
 // DEFINE PREFIX OF YOUR PRIVATE ROUTES HERE
 // EXMP : router.use('/ROUTE-NAME', ROUTENAME)
 
-module.exports = router
+router.use("/",userRoutes);
+
+module.exports = router;

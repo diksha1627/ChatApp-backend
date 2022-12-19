@@ -1,0 +1,21 @@
+GET http://localhost:5000/public/
+
+###
+POST http://localhost:5000/public/signup
+Content-Type: application/json
+
+{
+    "name": "diksha",
+    "email": "dikshabuxani84745@gmail.com",
+    "password": "123456",
+    "pic": "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
+
+}
+###
+POST http://localhost:5000/public/login
+Content-Type: application/json
+
+{
+    "email": "dikshabuxani84745@gmail.com",
+    "password": "123456"
+}
