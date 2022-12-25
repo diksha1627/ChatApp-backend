@@ -36,7 +36,7 @@ module.exports.signup = async (req,res) => {
 
     const hashedPassword = bcrypt.hashSync(password);
 
-    const user = new userModel({
+    const user = new userModel({ 
         name : name,
         email : email,
         password : hashedPassword,
